@@ -24,24 +24,31 @@ pip install opencv-python-headless
 pip install pillow
 pip install simpleaudio
 pip install numpy
+```
 
 このリポジトリをクローンします：
+```bash
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
+```
 
 プロジェクトディレクトリに必要な画像ファイルとXMLファイルがあることを確認してください：
-alarm_sound.wav：アラーム用の音声ファイル
-facial_recognition_webcam.py：メインのPythonスクリプト
-haarcascade_eye.xml：目の検出に使用するXMLファイル
-haarcascade_frontalface_default.xml：顔の検出に使用するXMLファイル
-raige_reimu.png：アラーム用の画像ファイル
-standard_reimu.png：標準表示用の画像ファイル
+- `alarm_sound.wav`：アラーム用の音声ファイル
+- `facial_recognition_webcam.py`：メインのPythonスクリプト
+- `haarcascade_eye.xml`：目の検出に使用するXMLファイル
+- `haarcascade_frontalface_default.xml`：顔の検出に使用するXMLファイル
+- `raige_reimu.png`：アラーム用の画像ファイル
+- `standard_reimu.png`：標準表示用の画像ファイル
 
 # Usage
+
 Pythonでスクリプトを実行します：
-bash
-Copy code
+
+```bash
 python facial_recognition_webcam.py
+
+```
+
 スクリプトはWebカメラの映像を表示するウィンドウを開きます。
 スクリプトはリアルタイムで顔と目を検出します。
 Webカメラとのインタラクションに基づいて、ユーザーのスコアを計算します（例：まばたきの回数など）。
